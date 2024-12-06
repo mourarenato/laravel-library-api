@@ -1,0 +1,16 @@
+@import "default-cv-template.css";
+@import "double-column-cv-template.css";
+@import "professional-cv-template.css";
+@import "purple-cv-template.css";
+@import "google-docs-cv-template.css";
+
+@media print, screen {
+    @page {
+        size: A4;
+        margin-top: 1cm;
+        margin-bottom: 1.5cm;
+        margin-left: 1cm;
+        margin-right: 1.5cm;
+    }
+}
+

@@ -1,0 +1,103 @@
+{
+  "resources/css/app.css": {
+    "file": "assets/app-27d46b13.css",
+    "isEntry": true,
+    "src": "resources/css/app.css"
+  },
+  "resources/js/Pages/DefaultCVTemplate.css": {
+    "file": "assets/DefaultCVTemplate-3048d067.css",
+    "src": "resources/js/Pages/DefaultCVTemplate.css"
+  },
+  "resources/js/Pages/DefaultCVTemplate.tsx": {
+    "css": [
+      "assets/DefaultCVTemplate-3048d067.css"
+    ],
+    "file": "assets/DefaultCVTemplate-ca1bcb6c.js",
+    "imports": [
+      "resources/js/app.tsx"
+    ],
+    "isDynamicEntry": true,
+    "src": "resources/js/Pages/DefaultCVTemplate.tsx"
+  },
+  "resources/js/Pages/DoubleColumnCVTemplate.css": {
+    "file": "assets/DoubleColumnCVTemplate-a8763b4b.css",
+    "src": "resources/js/Pages/DoubleColumnCVTemplate.css"
+  },
+  "resources/js/Pages/DoubleColumnCVTemplate.tsx": {
+    "css": [
+      "assets/DoubleColumnCVTemplate-a8763b4b.css"
+    ],
+    "file": "assets/DoubleColumnCVTemplate-63b85fdc.js",
+    "imports": [
+      "resources/js/app.tsx"
+    ],
+    "isDynamicEntry": true,
+    "src": "resources/js/Pages/DoubleColumnCVTemplate.tsx"
+  },
+  "resources/js/Pages/GoogleDocsCVTemplate.css": {
+    "file": "assets/GoogleDocsCVTemplate-701ae67f.css",
+    "src": "resources/js/Pages/GoogleDocsCVTemplate.css"
+  },
+  "resources/js/Pages/GoogleDocsCVTemplate.tsx": {
+    "css": [
+      "assets/GoogleDocsCVTemplate-701ae67f.css"
+    ],
+    "file": "assets/GoogleDocsCVTemplate-f29dcf45.js",
+    "imports": [
+      "resources/js/app.tsx"
+    ],
+    "isDynamicEntry": true,
+    "src": "resources/js/Pages/GoogleDocsCVTemplate.tsx"
+  },
+  "resources/js/Pages/ProfessionalCVTemplate.css": {
+    "file": "assets/ProfessionalCVTemplate-8f276e3d.css",
+    "src": "resources/js/Pages/ProfessionalCVTemplate.css"
+  },
+  "resources/js/Pages/ProfessionalCVTemplate.tsx": {
+    "css": [
+      "assets/ProfessionalCVTemplate-8f276e3d.css"
+    ],
+    "file": "assets/ProfessionalCVTemplate-94783e18.js",
+    "imports": [
+      "resources/js/app.tsx"
+    ],
+    "isDynamicEntry": true,
+    "src": "resources/js/Pages/ProfessionalCVTemplate.tsx"
+  },
+  "resources/js/Pages/PurpleCVTemplate.css": {
+    "file": "assets/PurpleCVTemplate-8352c81f.css",
+    "src": "resources/js/Pages/PurpleCVTemplate.css"
+  },
+  "resources/js/Pages/PurpleCVTemplate.tsx": {
+    "css": [
+      "assets/PurpleCVTemplate-8352c81f.css"
+    ],
+    "file": "assets/PurpleCVTemplate-d2edf057.js",
+    "imports": [
+      "resources/js/app.tsx"
+    ],
+    "isDynamicEntry": true,
+    "src": "resources/js/Pages/PurpleCVTemplate.tsx"
+  },
+  "resources/js/Pages/Welcome.tsx": {
+    "file": "assets/Welcome-f393a9b5.js",
+    "imports": [
+      "resources/js/app.tsx"
+    ],
+    "isDynamicEntry": true,
+    "src": "resources/js/Pages/Welcome.tsx"
+  },
+  "resources/js/app.tsx": {
+    "dynamicImports": [
+      "resources/js/Pages/DefaultCVTemplate.tsx",
+      "resources/js/Pages/DoubleColumnCVTemplate.tsx",
+      "resources/js/Pages/GoogleDocsCVTemplate.tsx",
+      "resources/js/Pages/ProfessionalCVTemplate.tsx",
+      "resources/js/Pages/PurpleCVTemplate.tsx",
+      "resources/js/Pages/Welcome.tsx"
+    ],
+    "file": "assets/app-a1f1d795.js",
+    "isEntry": true,
+    "src": "resources/js/app.tsx"
+  }
+}

@@ -1,0 +1,58 @@
+version: '3'
+services:
+  nginx:
+    image: nginx
+    container_name: nginx
+    restart: always
+    ports:
+      - "80:80"
+    volumes:
+      - ./docker/nginx_conf:/etc/nginx/conf.d
+      - ./:/var/www/html
+    depends_on:
+      - php
+    networks:
+      services-library-api:
+        ipv4_address: 10.10.0.72
+
+  php:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: library-api
+    restart: always
+    tty: true
+    ports:
+      - "5173:5173"
+    volumes:
+      - ./:/var/www/html
+      - /usr/bin/ssh:/usr/bin/ssh
+    working_dir: '/var/www/html'
+    environment:
+      - PHP_IDE_CONFIG=serverName=Local
+    networks:
+      services-library-api:
+        ipv4_address: 10.10.0.82
+
+  postgres:
+    image: postgres:11
+    container_name: postgres
+    restart: always
+    environment:
+      - POSTGRES_DB=library_api_db
+      - POSTGRES_USER=adm
+      - POSTGRES_PASSWORD=123456
+    volumes:
+      - ./data/volumes/postgres:/var/lib/postgresql/data
+      - ./data/dump:/var/lib/postgresql/dump
+    networks:
+      services-library-api:
+        ipv4_address: 10.10.0.32
+
+networks:
+  services-library-api:
+    ipam:
+      driver: default
+      config:
+        - subnet: 10.10.0.0/20
+
