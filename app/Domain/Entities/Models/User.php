@@ -38,9 +38,6 @@ class User extends Authenticatable implements JWTSubject
     public function encryptAttributes(): void
     {
         foreach ($this->sensitiveAttributes as $attribute) {
-            if (isset($this->attributes[$attribute]) && $attribute == 'email') {
-                $this->attributes[$attribute] = hash('sha256', $this->attributes[$attribute]);
-            }
             if (isset($this->attributes[$attribute]) && $attribute == 'password') {
                 $this->attributes[$attribute] = bcrypt($this->attributes[$attribute]);
             }

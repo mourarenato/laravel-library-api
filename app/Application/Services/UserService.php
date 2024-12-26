@@ -46,7 +46,7 @@ class UserService
     public function signin(): string
     {
         $credentials['password'] = $this->requestData['password'];
-        $email = hash('sha256', $this->requestData['email']);
+        $email = $this->requestData['email'];
         $credentials['email'] = $email;
 
         if (!JWTAuth::attempt($credentials)) {
