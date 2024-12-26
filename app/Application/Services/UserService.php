@@ -75,7 +75,7 @@ class UserService
     public function getUser(): User
     {
         $user = JWTAuth::authenticate(request()->header('Authorization'));
-        throw_if($user, new UserNotFoundException());
+        throw_if(!$user, new UserNotFoundException());
 
         return $user;
     }
